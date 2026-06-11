@@ -11,7 +11,7 @@ except Exception:
     api_key = st.sidebar.text_input("Enter OpenRouter API Key", type="password")
 
 if not api_key:
-    st.info("💡 Enter your API key in the sidebar to begin.")
+    st.info("Enter your API key in the sidebar to begin.")
     st.stop()
 
 client = OpenAI(
